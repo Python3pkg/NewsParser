@@ -2,12 +2,13 @@
 # -*- coding: utf-8 -*-
 # @Author: balicanta
 # @Date:   2014-10-25 00:09:39
-# @Last Modified by:   balicanta
-# @Last Modified time: 2014-10-25 10:47:11
+# @Last Modified by:   bustta
+# @Last Modified time: 2014-10-25 23:44:30
 
 import sys
 
 from UdnNewsParseStrategy import UdnNewsParseStrategy
+from WorldYamParseStrategy import WorldYamParseStrategy
 from AbstractNewsParseStrategy import AbstractNewsParseStrategy
 
 from requests.utils import get_encodings_from_content
@@ -44,7 +45,7 @@ class NewsParser():
     def _validataion(self):
         if(self.content_soup_object is None):
             content = self._fetchContent()
-            self.content_soup_object = BeautifulSoup(content, 'html5lib')
+            self.content_soup_object = BeautifulSoup(content)#, 'html5lib')
 
         if(self.parse_strategy is None):
             print "Non Support URL", self.url
