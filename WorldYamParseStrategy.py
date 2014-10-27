@@ -3,8 +3,9 @@
 # @Author: bustta
 # @Date:   2014-10-25 22:53:39
 # @Last Modified by:   bustta
-# @Last Modified time: 2014-10-25 23:45:18
+# @Last Modified time: 2014-10-27 23:21:32
 from AbstractNewsParseStrategy import AbstractNewsParseStrategy
+
 
 class WorldYamParseStrategy(AbstractNewsParseStrategy):
 
@@ -14,7 +15,7 @@ class WorldYamParseStrategy(AbstractNewsParseStrategy):
 
     def getTitle(self, beautiful_soup_object):
         article_area = beautiful_soup_object.find("article", "mainBox")
-        title = article_area.find("header").h2.text.encode('utf-8')
+        title = article_area.find("header").h2.text
         return title
 
     def getAuthor(self, beautiful_soup_object):
@@ -25,11 +26,11 @@ class WorldYamParseStrategy(AbstractNewsParseStrategy):
         all_paragraph = article_area.find_all("p")
         content = ""
         for idx in range(len(all_paragraph)):
-            content += all_paragraph[idx].text.encode('utf-8').strip()
+            content += all_paragraph[idx].text.strip()
 
         return content
 
     def getPublishDate(self, beautiful_soup_object):
         article_area = beautiful_soup_object.find("article", "mainBox")
-        time = article_area.find("header").time.text.encode('utf-8')
+        time = article_area.find("header").time.text
         return time

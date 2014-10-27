@@ -3,12 +3,13 @@
 # @Author: balicanta
 # @Date:   2014-10-25 00:09:39
 # @Last Modified by:   bustta
-# @Last Modified time: 2014-10-25 23:44:30
+# @Last Modified time: 2014-10-27 23:03:54
 
 import sys
 
 from UdnNewsParseStrategy import UdnNewsParseStrategy
 from WorldYamParseStrategy import WorldYamParseStrategy
+from LtnNewsParseStrategy import LtnNewsParseStrategy
 from AbstractNewsParseStrategy import AbstractNewsParseStrategy
 
 from requests.utils import get_encodings_from_content
