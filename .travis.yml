@@ -4,7 +4,9 @@ python:
 install:
   - "pip install -r requirements.txt"
 # command to run tests
-script: nosetests
-
+script: 
+  - nosetests --with-coverage --cover-package=.
 notifications:
   slack: lab3l7:Lx3Dd2gLGNZGqLo7Ki4kklYN
+after_success:  
+  - coveralls
