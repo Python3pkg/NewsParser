@@ -3,7 +3,7 @@
 # @Author: bustta
 # @Date:   2014-10-25 22:53:39
 # @Last Modified by:   bustta
-# @Last Modified time: 2014-10-27 23:21:32
+# @Last Modified time: 2014-10-29 22:45:25
 from AbstractNewsParseStrategy import AbstractNewsParseStrategy
 
 
@@ -24,10 +24,7 @@ class WorldYamParseStrategy(AbstractNewsParseStrategy):
     def getContent(self, beautiful_soup_object):
         article_area = beautiful_soup_object.find("article", "mainBox")
         all_paragraph = article_area.find_all("p")
-        content = ""
-        for idx in range(len(all_paragraph)):
-            content += all_paragraph[idx].text.strip()
-
+        content = " ".join(para.text.strip() for para in all_paragraph)
         return content
 
     def getPublishDate(self, beautiful_soup_object):
