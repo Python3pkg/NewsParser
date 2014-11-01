@@ -3,12 +3,14 @@
 # @Author: balicanta
 # @Date:   2014-10-25 00:09:39
 # @Last Modified by:   balicanta
-# @Last Modified time: 2014-11-01 21:09:55
+# @Last Modified time: 2014-11-01 21:20:08
 
 import sys
 
-from strategies.LtnNewsParseStrategy import LtnNewsParseStrategy
-from strategies.AbstractNewsParseStrategy import AbstractNewsParseStrategy
+from UdnNewsParseStrategy import UdnNewsParseStrategy
+from WorldYamParseStrategy import WorldYamParseStrategy
+from LtnNewsParseStrategy import LtnNewsParseStrategy
+from AbstractNewsParseStrategy import AbstractNewsParseStrategy
 
 from requests.utils import get_encodings_from_content
 from bs4 import BeautifulSoup
@@ -22,6 +24,7 @@ class NewsParser():
     parse_strategy = None
 
     def __init__(self, URL):
+        from AbstractNewsParseStrategy import AbstractNewsParseStrategy
         self.url = URL
         for parse_strategy in vars()['AbstractNewsParseStrategy'].__subclasses__():
             if parse_strategy().isURLMatch(URL):
