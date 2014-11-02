@@ -3,7 +3,7 @@
 # @Author: balicanta
 # @Date:   2014-10-25 00:09:39
 # @Last Modified by:   bustta
-# @Last Modified time: 2014-11-02 12:47:15
+# @Last Modified time: 2014-11-02 13:17:28
 
 import sys
 
@@ -11,6 +11,7 @@ from strategies.UdnNewsParseStrategy import UdnNewsParseStrategy
 from strategies.WorldYamParseStrategy import WorldYamParseStrategy
 from strategies.LtnNewsParseStrategy import LtnNewsParseStrategy
 from strategies.AnntwNewsParseStrategy import AnntwNewsParseStrategy
+from strategies.CoolLoudParseStrategy import CoolLoudParseStrategy
 from strategies.AbstractNewsParseStrategy import AbstractNewsParseStrategy
 
 from requests.utils import get_encodings_from_content
