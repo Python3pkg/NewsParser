@@ -2,8 +2,8 @@
 # -*- coding: utf-8 -*-
 # @Author: balicanta
 # @Date:   2014-10-25 09:57:26
-# @Last Modified by:   balicanta
-# @Last Modified time: 2014-11-01 21:19:53
+# @Last Modified by:   DinoLai
+# @Last Modified time: 2014-11-02 13:02:12
 
 from NewsParser import NewsParser
 from requests.utils import get_encodings_from_content
@@ -14,7 +14,10 @@ test_fixtures = [
     {"url": "http://world.yam.com/post.php?id=2732",
         "title": "海潮人潮兇", "author":"", "content": "這座遊人如織的水都"},
     {"url": "http://news.ltn.com.tw/news/business/breakingnews/1142153",
-        "title": "魏家退出101", "author":"", "content": "財政部次長吳當傑今天傍晚表示"}
+        "title": "魏家退出101", "author":"", "content": "財政部次長吳當傑今天傍晚表示"},
+    {"url": "http://www.coolloud.org.tw/node/80590",
+        "title": "澳洲打工遭台商剝削", "author":"王顥中", "content": "青年勞動九五聯盟29日上午召開記者會"
+    }
 ]
 
 
