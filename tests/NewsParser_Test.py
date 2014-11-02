@@ -2,8 +2,8 @@
 # -*- coding: utf-8 -*-
 # @Author: balicanta
 # @Date:   2014-10-25 09:57:26
-# @Last Modified by:   balicanta
-# @Last Modified time: 2014-11-01 21:19:53
+# @Last Modified by:   bustta
+# @Last Modified time: 2014-11-02 12:48:22
 
 from NewsParser import NewsParser
 from requests.utils import get_encodings_from_content
@@ -14,7 +14,9 @@ test_fixtures = [
     {"url": "http://world.yam.com/post.php?id=2732",
         "title": "海潮人潮兇", "author":"", "content": "這座遊人如織的水都"},
     {"url": "http://news.ltn.com.tw/news/business/breakingnews/1142153",
-        "title": "魏家退出101", "author":"", "content": "財政部次長吳當傑今天傍晚表示"}
+        "title": "魏家退出101", "author":"", "content": "財政部次長吳當傑今天傍晚表示"},
+    {"url": "http://www.anntw.com/articles/20141031-GrlZ",
+        "title": "立法治樹典範", "author":"杜胤廣", "content": "因看見偏鄉農民生活困"}
 ]
 
 
