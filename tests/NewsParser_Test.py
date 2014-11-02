@@ -3,7 +3,7 @@
 # @Author: balicanta
 # @Date:   2014-10-25 09:57:26
 # @Last Modified by:   bustta
-# @Last Modified time: 2014-11-02 13:20:36
+# @Last Modified time: 2014-11-02 13:23:11
 
 
 from NewsParser import NewsParser
@@ -17,10 +17,9 @@ test_fixtures = [
     {"url": "http://news.ltn.com.tw/news/business/breakingnews/1142153",
         "title": "魏家退出101", "author":"", "content": "財政部次長吳當傑今天傍晚表示"},
     {"url": "http://www.anntw.com/articles/20141031-GrlZ",
-        "title": "立法治樹典範", "author":"杜胤廣", "content": "因看見偏鄉農民生活困"}
+        "title": "立法治樹典範", "author":"杜胤廣", "content": "因看見偏鄉農民生活困"},
     {"url": "http://www.coolloud.org.tw/node/80590",
-        "title": "澳洲打工遭台商剝削", "author":"王顥中", "content": "青年勞動九五聯盟29日上午召開記者會"
-    }
+        "title": "澳洲打工遭台商剝削", "author":"王顥中", "content": "青年勞動九五聯盟29日上午召開記者會"}
 ]
 
 
