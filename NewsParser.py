@@ -2,14 +2,15 @@
 # -*- coding: utf-8 -*-
 # @Author: balicanta
 # @Date:   2014-10-25 00:09:39
-# @Last Modified by:   balicanta
-# @Last Modified time: 2014-11-01 21:25:52
+# @Last Modified by:   DinoLai
+# @Last Modified time: 2014-11-02 12:58:22
 
 import sys
 
 from strategies.UdnNewsParseStrategy import UdnNewsParseStrategy
 from strategies.WorldYamParseStrategy import WorldYamParseStrategy
 from strategies.LtnNewsParseStrategy import LtnNewsParseStrategy
+from strategies.CoolLoudParseStrategy import CoolLoudParseStrategy
 from strategies.AbstractNewsParseStrategy import AbstractNewsParseStrategy
 
 from requests.utils import get_encodings_from_content
