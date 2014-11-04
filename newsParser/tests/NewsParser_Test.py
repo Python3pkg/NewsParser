@@ -6,7 +6,7 @@
 # @Last Modified time: 2014-11-04 17:21:40
 
 
-from NewsParser import NewsParser
+from ..NewsParser import NewsParser
 from requests.utils import get_encodings_from_content
 
 test_fixtures = [
@@ -28,7 +28,7 @@ test_fixtures = [
 def test_parser():
 
     for test_fixture in test_fixtures:
-        parser = NewsParser.NewsParser(test_fixture['url'])
+        parser = NewsParser(test_fixture['url'])
         title = parser.getTitle()
         author = parser.getAuthor()
         content = parser.getContent()
