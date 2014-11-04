@@ -2,8 +2,8 @@
 # -*- coding: utf-8 -*-
 # @Author: balicanta
 # @Date:   2014-10-25 00:09:39
-# @Last Modified by:   bustta
-# @Last Modified time: 2014-11-02 13:17:28
+# @Last Modified by:   kenny.tsai
+# @Last Modified time: 2014-11-04 18:00:33
 
 import sys
 
@@ -12,6 +12,7 @@ from strategies.WorldYamParseStrategy import WorldYamParseStrategy
 from strategies.LtnNewsParseStrategy import LtnNewsParseStrategy
 from strategies.AnntwNewsParseStrategy import AnntwNewsParseStrategy
 from strategies.CoolLoudParseStrategy import CoolLoudParseStrategy
+from strategies.PeopleNewsParseStrategy import PeopleNewsParseStrategy
 from strategies.AbstractNewsParseStrategy import AbstractNewsParseStrategy
 
 from requests.utils import get_encodings_from_content
@@ -34,7 +35,6 @@ class NewsParser():
 
     def _fetchContent(self):
         r = requests.get(self.url)
-
         # Dynamic Get Encode From Content, get First as default
         self.encoding = get_encodings_from_content(r.content)[0]
 
@@ -48,7 +48,7 @@ class NewsParser():
     def _validataion(self):
         if(self.content_soup_object is None):
             content = self._fetchContent()
-            self.content_soup_object = BeautifulSoup(content)#, 'html5lib')
+            self.content_soup_object = BeautifulSoup(content)
 
         if(self.parse_strategy is None):
             print "Non Support URL", self.url
