@@ -2,21 +2,25 @@
 # -*- coding: utf-8 -*-
 # @Author: bustta
 # @Date:   2014-11-04 00:47:53
-# @Last Modified by:   bustta
-# @Last Modified time: 2014-11-05 01:13:27
+# @Last Modified by:   kenny.tsai
+# @Last Modified time: 2014-11-05 10:10:37
 
 from distutils.core import setup
 
 setup(
-    name = 'NewsParser',
+    name = 'newsParser',
     packages = ['newsParser'],
-    scripts = [''],
-    version = '0.0.3',
+    version = '0.0.4',
     description = 'Taiwan News Parser',
     author = 'lab317',
     author_email = 'balicanta@gmail.com',
     url = 'https://github.com/Lab-317/NewsParser',
-    download_url = 'https://github.com/Lab-317/NewsParser/archive/v0.0.3.tar.gz',
+    download_url = 'https://github.com/Lab-317/NewsParser/archive/v0.0.4.tar.gz',
     keywords = ['News', 'Parser', 'Taiwan'],
-    classifiers = [],
+    classifiers = [
+        "Development Status :: 2 - Pre-Alpha",
+        "Topic :: Utilities",
+        "License :: OSI Approved :: MIT License",
+        "Natural Language :: Chinese (Traditional)"
+    ],
 )
