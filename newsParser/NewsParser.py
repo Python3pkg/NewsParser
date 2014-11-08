@@ -2,19 +2,12 @@
 # -*- coding: utf-8 -*-
 # @Author: balicanta
 # @Date:   2014-10-25 00:09:39
-# @Last Modified by:   kenny.tsai
-# @Last Modified time: 2014-11-04 18:00:33
+# @Last Modified by:   DinoLai
+# @Last Modified time: 2014-11-09 03:49:57
 
 import sys
 
-from strategies.UdnNewsParseStrategy import UdnNewsParseStrategy
-from strategies.WorldYamParseStrategy import WorldYamParseStrategy
-from strategies.LtnNewsParseStrategy import LtnNewsParseStrategy
-from strategies.AnntwNewsParseStrategy import AnntwNewsParseStrategy
-from strategies.CoolLoudParseStrategy import CoolLoudParseStrategy
-from strategies.PeopleNewsParseStrategy import PeopleNewsParseStrategy
-from strategies.AbstractNewsParseStrategy import AbstractNewsParseStrategy
-
+from strategies import *
 from requests.utils import get_encodings_from_content
 from bs4 import BeautifulSoup
 import requests

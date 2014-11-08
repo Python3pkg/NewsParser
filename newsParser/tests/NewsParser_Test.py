@@ -2,8 +2,8 @@
 # -*- coding: utf-8 -*-
 # @Author: balicanta
 # @Date:   2014-10-25 09:57:26
-# @Last Modified by:   kenny.tsai
-# @Last Modified time: 2014-11-04 17:21:40
+# @Last Modified by:   DinoLai
+# @Last Modified time: 2014-11-09 03:58:04
 
 
 from ..NewsParser import NewsParser
