@@ -3,13 +3,13 @@
 # @Author: bustta
 # @Date:   2014-11-04 00:47:53
 # @Last Modified by:   balicanta
-# @Last Modified time: 2014-11-08 16:50:34
+# @Last Modified time: 2014-11-09 00:38:07
 
 from distutils.core import setup
 
 setup(
     name = 'newsParser',
-    version = newsParser.__version__,
+    version = '0.0.6',
     packages = ['newsParser', 'newsParser.strategies'],
     description = 'Taiwan News Parser',
     author = 'lab317',

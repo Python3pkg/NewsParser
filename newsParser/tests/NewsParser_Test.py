@@ -3,7 +3,7 @@
 # @Author: balicanta
 # @Date:   2014-10-25 09:57:26
 # @Last Modified by:   DinoLai
-# @Last Modified time: 2014-11-09 02:52:24
+# @Last Modified time: 2014-11-09 04:08:11
 
 
 from ..NewsParser import NewsParser
