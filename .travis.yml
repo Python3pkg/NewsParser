@@ -19,4 +19,5 @@ deploy:
   on:
     tags: true
     all_branches: true
+    upload_docs: no
     repo: Lab-317/NewsParser
