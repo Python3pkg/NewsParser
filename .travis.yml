@@ -1,13 +1,21 @@
 language: python
 python:
-  - "2.7"
+- '2.7'
 install:
-  - "pip install -r newsParser/requirements.txt"
-  - "pip install python-coveralls"
-  - "pip install coverage"
-script: 
-  - nosetests --with-coverage --cover-package=.
+- pip install -r newsParser/requirements.txt
+- pip install python-coveralls
+- pip install coverage
+script:
+- nosetests --with-coverage --cover-package=.
 notifications:
   slack: lab3l7:Lx3Dd2gLGNZGqLo7Ki4kklYN
-after_success:  
-  - coveralls
+after_success:
+- coveralls
+deploy:
+  provider: pypi
+  user: balicantaYao
+  password:
+    secure: QVB2hNx55GdOmszzH33cd1Hln/kptBPjT2Yyu4a8EXPAZqQbj/cmJX/+vybetzt39BZvmwctkPzJbddhjC0cMAHRrxLR5WYr0gZY9cXeF+zOIL6OmzX/WaeVcsaRr0z1IIHKdOGT0dDW8zBZ7ZHyeAa8NVIACAQOPSIwH2od6kw=
+  on:
+    tags: true
+    repo: Lab-317/NewsParser
