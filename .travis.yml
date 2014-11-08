@@ -18,4 +18,5 @@ deploy:
     secure: QVB2hNx55GdOmszzH33cd1Hln/kptBPjT2Yyu4a8EXPAZqQbj/cmJX/+vybetzt39BZvmwctkPzJbddhjC0cMAHRrxLR5WYr0gZY9cXeF+zOIL6OmzX/WaeVcsaRr0z1IIHKdOGT0dDW8zBZ7ZHyeAa8NVIACAQOPSIwH2od6kw=
   on:
     tags: true
+    all_branches: true
     repo: Lab-317/NewsParser
