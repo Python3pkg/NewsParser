@@ -2,8 +2,8 @@
 # -*- coding: utf-8 -*-
 # @Author: balicanta
 # @Date:   2014-10-25 09:57:26
-# @Last Modified by:   kenny.tsai
-# @Last Modified time: 2014-11-04 17:21:40
+# @Last Modified by:   DinoLai
+# @Last Modified time: 2014-11-09 02:52:24
 
 
 from ..NewsParser import NewsParser
@@ -21,7 +21,9 @@ test_fixtures = [
     {"url": "http://www.coolloud.org.tw/node/80590",
         "title": "澳洲打工遭台商剝削", "author":"王顥中", "content": "青年勞動九五聯盟29日上午召開記者會"},
     {"url": "http://www.peoplenews.tw/news/80a3de53-1c06-4d30-a330-b76e335132f7",
-        "title": "協助弱勢募款", "author":"朱蒲青", "content": "沒有什麼假想敵啦"}
+        "title": "協助弱勢募款", "author":"朱蒲青", "content": "沒有什麼假想敵啦"},
+    {"url": "http://www.stormmediagroup.com/opencms/investigate/detail/1e517551-6735-11e4-a007-ef2804cba5a1/?uuid=1e517551-6735-11e4-a007-ef2804cba5a1",
+        "title": "藍營高層看連勝文", "author":"王彥喬", "content": "當年郝龍斌選前因為貓纜"}
 ]
 
 

@@ -2,11 +2,12 @@
 # -*- coding: utf-8 -*-
 # @Author: balicanta
 # @Date:   2014-10-25 00:09:39
-# @Last Modified by:   kenny.tsai
-# @Last Modified time: 2014-11-04 18:00:33
+# @Last Modified by:   DinoLai
+# @Last Modified time: 2014-11-09 02:43:20
 
 import sys
 
+from strategies.StormMediaGroupParseStrategy import StormMediaGroupParseStrategy
 from strategies.UdnNewsParseStrategy import UdnNewsParseStrategy
 from strategies.WorldYamParseStrategy import WorldYamParseStrategy
 from strategies.LtnNewsParseStrategy import LtnNewsParseStrategy
