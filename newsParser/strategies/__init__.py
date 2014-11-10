@@ -3,7 +3,7 @@
 # @Author: balicanta
 # @Date:   2014-11-01 21:01:48
 # @Last Modified by:   DinoLai
-# @Last Modified time: 2014-11-09 03:59:22
+# @Last Modified time: 2014-11-09 04:07:23
 
 __all__ = [
     "AnntwNewsParseStrategy",
@@ -11,5 +11,6 @@ __all__ = [
     "LtnNewsParseStrategy",
     "PeopleNewsParseStrategy",
     "UdnNewsParseStrategy",
-    "WorldYamParseStrategy"
+    "WorldYamParseStrategy",
+    "StormMediaGroupParseStrategy"
     ]
