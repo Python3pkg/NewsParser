@@ -2,15 +2,15 @@
 # -*- coding: utf-8 -*-
 # @Author: bustta
 # @Date:   2014-11-04 00:47:53
-# @Last Modified by:   kenny.tsai
-# @Last Modified time: 2014-11-05 11:12:04
+# @Last Modified by:   balicanta
+# @Last Modified time: 2014-11-09 00:38:07
 
 from distutils.core import setup
 
 setup(
     name = 'newsParser',
+    version = '0.0.6',
     packages = ['newsParser', 'newsParser.strategies'],
-    version = '0.0.4',
     description = 'Taiwan News Parser',
     author = 'lab317',
     author_email = 'balicanta@gmail.com',

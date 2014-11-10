@@ -3,7 +3,7 @@
 # @Author: balicanta
 # @Date:   2014-10-25 09:57:26
 # @Last Modified by:   bustta
-# @Last Modified time: 2014-11-10 15:24:09
+# @Last Modified time: 2014-11-10 17:24:30
 
 
 from ..NewsParser import NewsParser
@@ -23,7 +23,9 @@ test_fixtures = [
     {"url": "http://www.peoplenews.tw/news/80a3de53-1c06-4d30-a330-b76e335132f7",
         "title": "協助弱勢募款", "author":"朱蒲青", "content": "沒有什麼假想敵啦"},
     {"url": "http://news.tvbs.com.tw/entry/553577",
-        "title": "柯文稿得人心", "author":"盧冠妃", "content": "我說過我是墨綠"}
+        "title": "柯文稿得人心", "author":"盧冠妃", "content": "我說過我是墨綠"},
+    {"url": "http://www.stormmediagroup.com/opencms/investigate/detail/1e517551-6735-11e4-a007-ef2804cba5a1/?uuid=1e517551-6735-11e4-a007-ef2804cba5a1",
+        "title": "藍營高層看連勝文", "author":"王彥喬", "content": "當年郝龍斌選前因為貓纜"}
 ]
 
 
