@@ -3,7 +3,7 @@
 # @Author: balicanta
 # @Date:   2014-10-25 00:09:39
 # @Last Modified by:   bustta
-# @Last Modified time: 2014-11-08 15:10:39
+# @Last Modified time: 2014-11-10 15:53:13
 
 import sys
 
@@ -37,7 +37,8 @@ class NewsParser():
     def _fetchContent(self):
         r = requests.get(self.url)
         # Dynamic Get Encode From Content, get First as default
-        self.encoding = get_encodings_from_content(r.content)[0]
+        # self.encoding = get_encodings_from_content(r.content)[0]
+        self.encoding = r.encoding
 
         # Set System default Codeing
         reload(sys)
