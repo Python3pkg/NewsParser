@@ -2,8 +2,8 @@
 # -*- coding: utf-8 -*-
 # @Author: balicanta
 # @Date:   2014-11-01 21:01:48
-# @Last Modified by:   DinoLai
-# @Last Modified time: 2014-11-09 04:07:23
+# @Last Modified by:   bustta
+# @Last Modified time: 2014-11-10 17:45:31
 
 __all__ = [
     "AnntwNewsParseStrategy",
@@ -12,5 +12,6 @@ __all__ = [
     "PeopleNewsParseStrategy",
     "UdnNewsParseStrategy",
     "WorldYamParseStrategy",
-    "StormMediaGroupParseStrategy"
+    "StormMediaGroupParseStrategy",
+    "TVBSParseStrategy"
     ]
