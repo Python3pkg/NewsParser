@@ -2,8 +2,8 @@
 # -*- coding: utf-8 -*-
 # @Author: balicanta
 # @Date:   2014-10-25 00:09:39
-# @Last Modified by:   kenny.tsai
-# @Last Modified time: 2014-11-04 18:00:33
+# @Last Modified by:   bustta
+# @Last Modified time: 2014-11-10 17:13:49
 
 import sys
 
@@ -13,9 +13,11 @@ from strategies.LtnNewsParseStrategy import LtnNewsParseStrategy
 from strategies.AnntwNewsParseStrategy import AnntwNewsParseStrategy
 from strategies.CoolLoudParseStrategy import CoolLoudParseStrategy
 from strategies.PeopleNewsParseStrategy import PeopleNewsParseStrategy
+from strategies.TVBSParseStrategy import TVBSParseStrategy
 from strategies.AbstractNewsParseStrategy import AbstractNewsParseStrategy
 
 from requests.utils import get_encodings_from_content
+from requests.utils import get_unicode_from_response
 from bs4 import BeautifulSoup
 import requests
 
@@ -35,14 +37,21 @@ class NewsParser():
 
     def _fetchContent(self):
         r = requests.get(self.url)
-        # Dynamic Get Encode From Content, get First as default
-        self.encoding = get_encodings_from_content(r.content)[0]
+
+        if get_encodings_from_content(r.content):
+            self.encoding = get_encodings_from_content(r.content)[0]
+        else:
+            from contextlib import closing
+            from urllib2 import urlopen
+            with closing(urlopen(self.url)) as f:
+                self.encoding = f.info().getparam("charset")
 
         # Set System default Codeing
         reload(sys)
         sys.setdefaultencoding(self.encoding)
 
         content = r.content.decode(self.encoding)
+
         return content
 
     def _validataion(self):
