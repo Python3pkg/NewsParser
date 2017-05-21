@@ -5,7 +5,7 @@
 # @Last Modified by:   balicanta
 # @Last Modified time: 2014-10-25 10:47:27
 
-from AbstractNewsParseStrategy import AbstractNewsParseStrategy
+from .AbstractNewsParseStrategy import AbstractNewsParseStrategy
 
 
 class UdnNewsParseStrategy(AbstractNewsParseStrategy):

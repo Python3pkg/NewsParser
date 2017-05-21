@@ -5,4 +5,4 @@
 # @Last Modified by:   balicanta
 # @Last Modified time: 2014-11-05 22:19:01
 
-from NewsParser import NewsParser
+from .NewsParser import NewsParser

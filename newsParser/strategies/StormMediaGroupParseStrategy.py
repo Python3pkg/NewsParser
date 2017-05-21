@@ -5,7 +5,7 @@
 # @Last Modified by:   DinoLai
 # @Last Modified time: 2014-11-09 01:54:31
 
-from AbstractNewsParseStrategy import AbstractNewsParseStrategy
+from .AbstractNewsParseStrategy import AbstractNewsParseStrategy
 
 
 class StormMediaGroupParseStrategy(AbstractNewsParseStrategy):

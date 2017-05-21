@@ -7,7 +7,7 @@
 
 import sys
 
-from strategies import *
+from .strategies import *
 from requests.utils import get_encodings_from_content
 from bs4 import BeautifulSoup
 import requests
@@ -20,7 +20,7 @@ class NewsParser():
     parse_strategy = None
 
     def __init__(self, URL):
-        from strategies.AbstractNewsParseStrategy import AbstractNewsParseStrategy
+        from .strategies.AbstractNewsParseStrategy import AbstractNewsParseStrategy
         self.url = URL
         for parse_strategy in vars()['AbstractNewsParseStrategy'].__subclasses__():
             if parse_strategy().isURLMatch(URL):
@@ -33,7 +33,7 @@ class NewsParser():
             self.encoding = get_encodings_from_content(r.content)[0]
         else:
             from contextlib import closing
-            from urllib2 import urlopen
+            from urllib.request import urlopen
             with closing(urlopen(self.url)) as f:
                 self.encoding = f.info().getparam("charset")
 
@@ -51,7 +51,7 @@ class NewsParser():
             self.content_soup_object = BeautifulSoup(content)
 
         if(self.parse_strategy is None):
-            print "Non Support URL", self.url
+            print("Non Support URL", self.url)
 
     def getTitle(self):
         self._validataion()

@@ -5,7 +5,7 @@
 # @Last Modified by:   bustta
 # @Last Modified time: 2014-11-10 15:22:42
 
-from AbstractNewsParseStrategy import AbstractNewsParseStrategy
+from .AbstractNewsParseStrategy import AbstractNewsParseStrategy
 
 
 class TVBSParseStrategy(AbstractNewsParseStrategy):

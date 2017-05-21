@@ -8,11 +8,8 @@
 from abc import ABCMeta, abstractmethod
 
 
-class AbstractNewsParseStrategy():
+class AbstractNewsParseStrategy(metaclass=ABCMeta):
 
-    __metaclass__ = ABCMeta
-
-    # Check Url is matching this strategy
     @abstractmethod
     def isURLMatch(self, url):
         pass

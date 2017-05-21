@@ -5,7 +5,7 @@
 # @Last Modified by:   DinoLai
 # @Last Modified time: 2014-11-02 13:01:37
 
-from AbstractNewsParseStrategy import AbstractNewsParseStrategy
+from .AbstractNewsParseStrategy import AbstractNewsParseStrategy
 
 
 class CoolLoudParseStrategy(AbstractNewsParseStrategy):

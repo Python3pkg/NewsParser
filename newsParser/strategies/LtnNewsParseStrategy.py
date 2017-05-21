@@ -4,7 +4,7 @@
 # @Date:   2014-10-27 22:59:12
 # @Last Modified by:   bustta
 # @Last Modified time: 2014-10-27 23:19:51
-from AbstractNewsParseStrategy import AbstractNewsParseStrategy
+from .AbstractNewsParseStrategy import AbstractNewsParseStrategy
 
 
 class LtnNewsParseStrategy(AbstractNewsParseStrategy):

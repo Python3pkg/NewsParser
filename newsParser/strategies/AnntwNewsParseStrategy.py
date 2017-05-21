@@ -4,7 +4,7 @@
 # @Date:   2014-11-02 12:43:04
 # @Last Modified by:   kenny.tsai
 # @Last Modified time: 2014-11-04 17:50:55
-from AbstractNewsParseStrategy import AbstractNewsParseStrategy
+from .AbstractNewsParseStrategy import AbstractNewsParseStrategy
 
 
 class AnntwNewsParseStrategy(AbstractNewsParseStrategy):

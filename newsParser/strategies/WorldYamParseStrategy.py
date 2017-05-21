@@ -4,7 +4,7 @@
 # @Date:   2014-10-25 22:53:39
 # @Last Modified by:   bustta
 # @Last Modified time: 2014-10-29 22:45:25
-from AbstractNewsParseStrategy import AbstractNewsParseStrategy
+from .AbstractNewsParseStrategy import AbstractNewsParseStrategy
 
 
 class WorldYamParseStrategy(AbstractNewsParseStrategy):

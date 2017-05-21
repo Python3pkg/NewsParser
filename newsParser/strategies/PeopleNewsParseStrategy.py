@@ -5,7 +5,7 @@
 # @Last Modified by:   kenny.tsai
 # @Last Modified time: 2014-11-04 18:01:51
 
-from AbstractNewsParseStrategy import AbstractNewsParseStrategy
+from .AbstractNewsParseStrategy import AbstractNewsParseStrategy
 
 
 class PeopleNewsParseStrategy(AbstractNewsParseStrategy):
